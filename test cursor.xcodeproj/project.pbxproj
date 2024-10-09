@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D35088072CAB9A2800BE8E9C /* VungleAdsSDK in Frameworks */ = {isa = PBXBuildFile; productRef = D35088062CAB9A2800BE8E9C /* VungleAdsSDK */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D35087E92CAA4DD600BE8E9C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D35088072CAB9A2800BE8E9C /* VungleAdsSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = "test cursor";
 			packageProductDependencies = (
+				D35088062CAB9A2800BE8E9C /* VungleAdsSDK */,
 			);
 			productName = "test cursor";
 			productReference = D35087D82CAA4DD500BE8E9C /* test cursor.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = D35087CF2CAA4DD500BE8E9C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D35088052CAB9A2800BE8E9C /* XCRemoteSwiftPackageReference "VungleAdsSDK-SwiftPackageManager" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D35087D92CAA4DD500BE8E9C /* Products */;
 			projectDirPath = "";
@@ -396,13 +405,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"test cursor/Preview Content\"";
+				DEVELOPMENT_TEAM = 84E6ZQ62B6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "test-cursor-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_PREPROCESS = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -424,13 +436,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"test cursor/Preview Content\"";
+				DEVELOPMENT_TEAM = 84E6ZQ62B6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "test-cursor-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_PREPROCESS = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -552,6 +567,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D35088052CAB9A2800BE8E9C /* XCRemoteSwiftPackageReference "VungleAdsSDK-SwiftPackageManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Vungle/VungleAdsSDK-SwiftPackageManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D35088062CAB9A2800BE8E9C /* VungleAdsSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D35088052CAB9A2800BE8E9C /* XCRemoteSwiftPackageReference "VungleAdsSDK-SwiftPackageManager" */;
+			productName = VungleAdsSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D35087D02CAA4DD500BE8E9C /* Project object */;
 }
